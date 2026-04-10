@@ -1,0 +1,51 @@
+{
+  "name": "arcrouter-classifier",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Fast prompt classifier — topic detection, complexity scoring, agentic detection, and lossless compression",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "llm",
+    "routing",
+    "classifier",
+    "prompt",
+    "ai",
+    "topic-detection",
+    "complexity",
+    "compression"
+  ],
+  "author": "ArcRouter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArcRouterAI/arcrouter"
+  },
+  "homepage": "https://arcrouter.com",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^22.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
