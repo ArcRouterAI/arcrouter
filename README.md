@@ -142,7 +142,7 @@ The full ArcRouter stack (semantic routing, benchmark scoring, council consensus
 ## Links
 
 - **ArcRouter API:** https://api.arcrouter.com
-- **SDK:** https://github.com/ArcRouterAI/arcrouter-sdk (`npm install arcrouter`)
+- **SDK:** https://github.com/ArcRouterAI/arcrouter-sdk (`npm install @arcrouter/sdk`)
 - **Docs:** https://arcrouter.com/docs
 - **MCP server:** `claude mcp add arcrouter --transport http https://api.arcrouter.com/mcp`
 
