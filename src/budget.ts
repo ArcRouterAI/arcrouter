@@ -19,3 +19,14 @@ export function normalizeRoutingBudget(rawBudget?: string): RoutingBudget {
   if (budget === "auto" || budget === "medium") return "auto";
   return "auto";
 }
+
+/**
+ * Convert routing budget to legacy council budget names.
+ * Council selector still uses free/low/medium/high internally.
+ */
+export function routingBudgetToCouncilBudget(budget: RoutingBudget): "free" | "low" | "medium" | "high" {
+  if (budget === "free") return "free";
+  if (budget === "economy") return "low";
+  if (budget === "premium") return "high";
+  return "medium";
+}
